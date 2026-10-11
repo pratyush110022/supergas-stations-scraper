@@ -24,7 +24,7 @@ The workbook includes fields returned by the source such as:
 ## Files
 
 - Super_Scraper.py — scraper entry point
-- SUPERGAS_All_Stations.xlsx — example workbook included in the repository
+- `SUPERGAS_All_Stations.xlsx` — existing scraper output workbook
 - requirements.txt — Python dependencies
 
 ## Requirements and setup
@@ -51,3 +51,7 @@ The script creates SUPERGAS_All_Stations.xlsx in the current working directory. 
 - Search completeness depends on the API's response for each grid box; the configured grid is an approximation of coverage, not a guarantee that every dealer is returned.
 - Source API behavior and response fields can change.
 - Follow the source website's terms and applicable policies when collecting or redistributing data.
+
+## Synthetic sample data
+
+[`sample_synthetic_12_records.csv`](sample_synthetic_12_records.csv) contains **12 synthetic test records** using the scraper's output schema. These records were generated for schema inspection and portfolio/demo purposes; they were not collected from the source website or API. Names and addresses are fictional, contact details and example.com links are placeholders, coordinates are illustrative, and ratings/prices are not real or current. Do not use them for real-world navigation or pricing decisions.
