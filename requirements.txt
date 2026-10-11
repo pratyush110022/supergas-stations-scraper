@@ -1,0 +1,5 @@
+﻿# Review these dependencies against the Python script.
+requests
+pandas
+tqdm
+openpyxl
