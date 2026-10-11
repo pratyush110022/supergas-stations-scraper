@@ -1,42 +1,53 @@
-﻿# SUPERGAS Stations Scraper
+# SUPERGAS AutoGas Dealer Scraper
 
-A Python project for collecting and organizing SUPERGAS station data.
+Python data collection for SUPERGAS dealer locations. The script queries the dealer-search API across a configured latitude/longitude grid, combines results, removes duplicate dealer IDs, and exports an Excel workbook.
 
-## Project Files
+## How it works
 
-- `Super_Scraper.py` — main Python script
-- `SUPERGAS_All_Stations.xlsx` — sample station dataset
+1. Defines a grid of latitude and longitude search points.
+2. Sends POST requests to the SUPERGAS dealer-search endpoint for the Autogas dealer type.
+3. Builds a bounding box around each grid point and collects the returned dealer records.
+4. Stores records by dealer ID so repeated results from overlapping search areas do not create duplicate rows.
+5. Sorts the results by station/dealer name and writes an Excel workbook.
 
-## Technology
+## Data fields
 
-Python, data collection, and structured dataset processing.
-The exact dependencies and collection workflow should be verified
-against the Python script.
+The workbook includes fields returned by the source such as:
 
-## Setup
+- Dealer ID and station/dealer name
+- Latitude and longitude
+- Phone, email, and website
+- Store type
+- Preferred-partner and delivery flags
+- Bio flag and icon metadata
 
-Create a virtual environment:
+## Files
+
+- Super_Scraper.py — scraper entry point
+- SUPERGAS_All_Stations.xlsx — example workbook included in the repository
+- requirements.txt — Python dependencies
+
+## Requirements and setup
+
+- Python 3.10 or a compatible version
+- Packages listed in requirements.txt
 
     python -m venv .venv
-    .venv\Scripts\Activate.ps1
+    .venv/Scripts/Activate.ps1
+    pip install -r requirements.txt
 
-Install the dependencies listed in `requirements.txt`.
+## Configuration and run
 
-## Run
+Review Super_Scraper.py before running. The API URL, request headers, grid coordinate lists, and output filename are defined near the top of the script. Edit the latitudes and longitudes lists to change search coverage.
+
+Run:
 
     python Super_Scraper.py
 
-Review the script configuration before running it. Keep credentials
-outside the source code and use authorized data sources.
+The script creates SUPERGAS_All_Stations.xlsx in the current working directory. If Excel writing fails because the workbook engine is missing, install openpyxl.
 
-## Dataset
+## Notes
 
-The included Excel workbook provides a sample dataset for inspection.
-Verify its contents, geographic coverage, freshness, and permission
-for redistribution before publishing.
-
-## Author
-
-Pratyush Das
-
-GitHub: https://github.com/pratyush110022
+- Search completeness depends on the API's response for each grid box; the configured grid is an approximation of coverage, not a guarantee that every dealer is returned.
+- Source API behavior and response fields can change.
+- Follow the source website's terms and applicable policies when collecting or redistributing data.
