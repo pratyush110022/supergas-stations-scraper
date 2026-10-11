@@ -1,0 +1,13 @@
+ID,Station Name,Latitude,Longitude,Phone,Email,Website,Store Type,Preferred,Delivery,Bio,Icon
+SYN-SG-001,Synthetic SUPERGAS Station 01,12.9716,77.5946,0000000000,station1@example.com,https://example.com/supergas/1,Autogas,true,true,false,synthetic-marker
+SYN-SG-002,Synthetic SUPERGAS Station 02,19.076,72.8777,0000000000,station2@example.com,https://example.com/supergas/2,Autogas,false,false,false,synthetic-marker
+SYN-SG-003,Synthetic SUPERGAS Station 03,18.5204,73.8567,0000000000,station3@example.com,https://example.com/supergas/3,Autogas,false,true,false,synthetic-marker
+SYN-SG-004,Synthetic SUPERGAS Station 04,17.385,78.4867,0000000000,station4@example.com,https://example.com/supergas/4,Autogas,true,false,false,synthetic-marker
+SYN-SG-005,Synthetic SUPERGAS Station 05,20.2961,85.8245,0000000000,station5@example.com,https://example.com/supergas/5,Autogas,false,true,false,synthetic-marker
+SYN-SG-006,Synthetic SUPERGAS Station 06,16.5062,80.648,0000000000,station6@example.com,https://example.com/supergas/6,Autogas,false,false,false,synthetic-marker
+SYN-SG-007,Synthetic SUPERGAS Station 07,26.9124,75.7873,0000000000,station7@example.com,https://example.com/supergas/7,Autogas,true,true,false,synthetic-marker
+SYN-SG-008,Synthetic SUPERGAS Station 08,26.8467,80.9462,0000000000,station8@example.com,https://example.com/supergas/8,Autogas,false,false,false,synthetic-marker
+SYN-SG-009,Synthetic SUPERGAS Station 09,9.9312,76.2673,0000000000,station9@example.com,https://example.com/supergas/9,Autogas,false,true,false,synthetic-marker
+SYN-SG-010,Synthetic SUPERGAS Station 10,13.0827,80.2707,0000000000,station10@example.com,https://example.com/supergas/10,Autogas,true,false,false,synthetic-marker
+SYN-SG-011,Synthetic SUPERGAS Station 11,22.5726,88.3639,0000000000,station11@example.com,https://example.com/supergas/11,Autogas,false,true,false,synthetic-marker
+SYN-SG-012,Synthetic SUPERGAS Station 12,28.6139,77.209,0000000000,station12@example.com,https://example.com/supergas/12,Autogas,false,false,false,synthetic-marker
